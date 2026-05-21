@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KCGI Web Programming 1 - Group Portfolio</title>
+    <style>
+        :root {
+            --primary: #0f172a;
+            --secondary: #2563eb;
+            --accent: #f43f5e;
+            --bg-gradient: linear-gradient(135deg, #e0f2fe 0%, #cheffe 100%);
+            --card-bg: #ffffff;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f0fdf4;
+            background-image: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+            color: #1e293b;
+            margin: 0;
+            padding: 40px 20px;
+            min-height: 100vh;
+        }
+        .main-container {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+            background: var(--primary);
+            color: white;
+            padding: 40px 20px;
+            border-radius: 24px;
+            box-shadow: 0 10px 25px rgba(15, 23, 42, 0.15);
+        }
+        header h1 {
+            margin: 0 0 10px 0;
+            font-size: 32px;
+            letter-spacing: -0.5px;
+        }
+        header p {
+            margin: 0;
+            font-size: 16px;
+            color: #93c5fd;
+            font-weight: 300;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
+        }
+        .member-card {
+            background: var(--card-bg);
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            border: 1px solid #e2e8f0;
+        }
+        .member-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 30px rgba(37, 99, 235, 0.15);
+        }
+        .card-banner {
+            height: 120px;
+            background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
+            position: relative;
+        }
+        .card-banner.sewmini { background: linear-gradient(135deg, #ec4899 0%, #be185d 100%); }
+        .card-banner.sudeshika { background: linear-gradient(135deg, #06b6d4 0%, #0e7490 100%); }
+        
+        .avatar-wrapper {
+            width: 110px;
+            height: 110px;
+            border-radius: 50%;
+            border: 4px solid white;
+            overflow: hidden;
+            position: absolute;
+            bottom: -55px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #f8fafc;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        .avatar-wrapper img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .card-content {
+            padding: 75px 25px 30px 25px;
+            text-align: center;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        .card-content h2 {
+            margin: 0 0 8px 0;
+            font-size: 22px;
+            color: var(--primary);
+        }
+        .specialization {
+            display: inline-block;
+            background: #eff6ff;
+            color: var(--secondary);
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+        .member-card:nth-child(2) .specialization { background: #fdf2f8; color: #db2777; }
+        .member-card:nth-child(3) .specialization { background: #ecfeff; color: #0891b2; }
+
+        .btn-profile {
+            display: block;
+            background: var(--primary);
+            color: white;
+            text-decoration: none;
+            padding: 12px;
+            border-radius: 12px;
+            font-weight: 600;
+            margin-top: auto;
+            transition: background 0.2s ease;
+        }
+        .btn-profile:hover {
+            background: var(--secondary);
+        }
+        
+        /* A4 Print Layout rules Optimization */
+        @media print {
+            body { background: white; padding: 0; }
+            header { box-shadow: none; background: #e2e8f0; color: black; border-radius: 0; }
+            header p { color: #475569; }
+            .member-card { box-shadow: none; border: 1px solid #cbd5e1; page-break-inside: avoid; }
+            .btn-profile { background: none; color: black; border: 1px solid black; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="main-container">
+        <header>
+            <h1>KCGI Web Programming 1 - Group Portfolio</h1>
+            <p>Showcasing the professional expertise, academic achievements, and core qualifications of our team.</p>
+        </header>
+
+        <div class="grid-container">
+            <div class="member-card">
+                <div class="card-banner">
+                    <div class="avatar-wrapper">
+                        <img src="dinuki.jpg" alt="Dinuki Sihara">
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h2>Dinuki Sihara</h2>
+                    <div><span class="specialization">ERP & Finance Specialist</span></div>
+                    <a href="dinuki.html" class="btn-profile">View Full Profile</a>
+                </div>
+            </div>
+
+            <div class="member-card">
+                <div class="card-banner sewmini">
+                    <div class="avatar-wrapper">
+                        <img src="Sewmini.jpg" alt="Sewmini Weerarathna">
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h2>Sewmini Weerarathna</h2>
+                    <div><span class="specialization">IT Tourism & Multilingual Specialist</span></div>
+                    <a href="sewmini.html" class="btn-profile">View Full Profile</a>
+                </div>
+            </div>
+
+            <div class="member-card">
+                <div class="card-banner sudeshika">
+                    <div class="avatar-wrapper">
+                        <img src="sudeshika.jpg" alt="Sudeshika Geethamali">
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h2>Sudeshika Geethamali</h2>
+                    <div><span class="specialization">Finance & Accounting Operations</span></div>
+                    <a href="sudeshika.html" class="btn-profile">View Full Profile</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
