@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Contribution Form</title>
+    <style>
+        :root {
+            --primary: #1e3a8a;
+            --secondary: #3b82f6;
+            --accent: #f59e0b;
+            --bg: #f8fafc;
+            --text: #334155;
+        }
+        body {
+            font-family: 'Segoe UI', system-serif, sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            margin: 0;
+            padding: 30px 15px;
+        }
+        .nav-back {
+            max-width: 900px;
+            margin: 0 auto 20px auto;
+        }
+        .btn-back {
+            display: inline-block;
+            text-decoration: none;
+            color: var(--primary);
+            font-weight: 600;
+            background: #eff6ff;
+            padding: 8px 16px;
+            border-radius: 8px;
+            transition: 0.2s;
+        }
+        .btn-back:hover { background: #dbeafe; }
+        
+        .container {
+            max-width: 900px;
+            background: white;
+            margin: 0 auto;
+            border-radius: 20px;
+            box-shadow: 0 4px 25px rgba(0,0,0,0.06);
+            padding: 40px;
+            border: 1px solid #e2e8f0;
+        }
+        
+        h1 {
+            color: var(--primary);
+            margin-top: 0;
+            font-size: 28px;
+            border-bottom: 2px solid #e2e8f0;
+            padding-bottom: 15px;
+        }
+        
+        .project-meta {
+            background: #f1f5f9;
+            padding: 20px;
+            border-radius: 12px;
+            margin-bottom: 30px;
+        }
+        .project-meta p {
+            margin: 8px 0;
+            font-size: 15px;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #cbd5e1;
+            padding: 14px;
+            text-align: left;
+            font-size: 14.5px;
+        }
+        th {
+            background-color: #eff6ff;
+            color: var(--primary);
+            font-weight: 600;
+        }
+        tr:nth-child(even) {
+            background-color: #f8fafc;
+        }
+        
+        .percentage {
+            font-weight: bold;
+            color: var(--primary);
+            text-align: center;
+        }
+        
+        .student-id {
+            display: block;
+            font-size: 13px;
+            color: #64748b;
+            font-weight: normal;
+            margin-top: 4px;
+        }
+        
+        ul {
+            margin: 0;
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 6px;
+            line-height: 1.4;
+        }
+
+        @media print {
+            body { padding: 0; background: white; }
+            .nav-back { display: none; }
+            .container { box-shadow: none; border: none; max-width: 100%; padding: 0; }
+            @page { size: A4; margin: 1.5cm; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="nav-back">
+        <a href="index.html" class="btn-back">← Back to Group Portfolio</a>
+    </div>
+
+    <div class="container">
+        <h1>Group Project Contribution Form</h1>
+        
+        <div class="project-meta">
+            <p><b>Course Module:</b> Web Programming 1</p>
+            <p><b>Project Title:</b> Academic Group Portfolio Website</p>
+            <p><b>Submission Requirement:</b> Compulsory Team Work Validation</p>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th style="width: 30%;">Member Name & ID</th>
+                    <th style="width: 20%;">Assigned Role</th>
+                    <th style="width: 38%;">Key Contributions & Tasks Completed</th>
+                    <th style="width: 12%; text-align: center;">Contribution (%)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <b>Dinuki Sihara</b>
+                        <span class="student-id">ID: M25W7510</span>
+                    </td>
+                    <td>Lead Full-Stack Developer & Coordinator</td>
+                    <td>
+                        <ul>
+                            <li>Programmed and deployed the main landing interface (`index.html`).</li>
+                            <li>Designed and stylized the advanced CV showcase branch (`dinuki.html`).</li>
+                            <li>Integrated responsive CSS media layouts and configured map iframes.</li>
+                            <li>Compiled academic financial history, GPA milestones, and qualifications tracking grid.</li>
+                            <li>Engineered and coded the group's complete contribution summary documentation page.</li>
+                        </ul>
+                    </td>
+                    <td class="percentage">33.4%</td>
+                </tr>
+                <tr>
+                    <td>
+                        <b>Sewmini Weerarathna</b>
+                        <span class="student-id">ID: M25W7484</span>
+                    </td>
+                    <td>Content Architect & Translator</td>
+                    <td>
+                        <ul>
+                            <li>Designed the international languages skillset layout blueprint (`CV Sewmini.html`).</li>
+                            <li>Structured list structures tracking specialized regional experience milestones.</li>
+                            <li>Audited cross-platform typography alignments inside workspace assets.</li>
+                        </ul>
+                    </td>
+                    <td class="percentage">33.3%</td>
+                </tr>
+                <tr>
+                    <td>
+                        <b>Lanka Geeganage Sudeshika Geethamali</b>
+                        <span class="student-id">ID: M25W7514</span>
+                    </td>
+                    <td>UI Designer & Documentarian</td>
+                    <td>
+                        <ul>
+                            <li>Authored clean custom workspace info layouts and information components (`sudeshika.html`).</li>
+                            <li>Configured profile display containers and interactive elements alignment.</li>
+                            <li>Formatted systemic asset tracking parameters across portfolio nodes.</li>
+                        </ul>
+                    </td>
+                    <td class="percentage">33.3%</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr style="background-color: #f1f5f9; font-weight: bold;">
+                    <td colspan="3" style="text-align: right; color: var(--primary);">Total Work Contribution:</td>
+                    <td style="text-align: center; color: var(--primary);">100%</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+
+</body>
+</html>
